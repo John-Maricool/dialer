@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
+import com.bumptech.glide.Glide
 
 class MainActivity : AppCompatActivity() {
 
@@ -96,7 +97,7 @@ class MainActivity : AppCompatActivity() {
             // Simulate the phone ringing
             val ringingIntent = Intent(this, CallRingingActivity::class.java).apply {
                 putExtra("phoneNumber", phoneNumber)
-                putExtra("imageUri", intent.getStringExtra("imageUri"))
+                putExtra("imageUri", imageUri.toString())
                 addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             }
             startActivity(ringingIntent)
@@ -112,7 +113,7 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == RESULT_OK && requestCode == pickImage) {
             imageUri = data?.data
-            contactImageView.setImageURI(imageUri)
+            Glide.with(this).load(imageUri).circleCrop().into(contactImageView)
         }
     }
 }

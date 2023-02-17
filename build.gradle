@@ -8,3 +8,12 @@ plugins {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        //maven { url 'https://www.jitpack.io' }
+        maven { url 'https://maven.fabric.io/public' }
+    }
+}

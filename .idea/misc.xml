@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/layout/activity_call.xml" value="0.22395833333333334" />
-        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/layout/activity_call_ringing.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/drawable/call_hang.xml" value="0.122" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/drawable/call_hang_white.xml" value="0.122" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/drawable/call_pick.xml" value="0.122" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/layout/activity_call.xml" value="0.22" />
+        <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/layout/activity_call_ringing.xml" value="0.2" />
         <entry key="..\:/Users/JOHN BATISTA/AndroidStudioProjects/dialer/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>
